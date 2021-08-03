@@ -79,3 +79,40 @@ body {
     flex-direction: row;
     justify-content: center;
 }
+
+.search {
+    position: left;
+}
+
+#searchbox {
+    left: 0px;
+    height: 50px;
+    width: 5px;
+    border-radius: 15px;
+    background-image: url('https://img.icons8.com/fluency/48/000000/search.png');
+    padding-left: 30px;
+    background-size: 38px;
+    background-repeat: no-repeat;
+    background-position: left;
+    text-indent: 27px;
+    margin-left: 20px;
+    background-color: whitesmoke;
+    border: none;
+    margin-top: 8px;
+    transition: 2s;
+}
+
+#searchbox:focus {
+    outline: none;
+}
+
+#searchbox:hover {
+    background-color: white;
+    width: 300px;
+    transition: 1s;
+}
+
+input[type='text'] {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
