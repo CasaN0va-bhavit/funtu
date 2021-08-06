@@ -84,7 +84,7 @@ body {
     position: left;
 }
 
-#searchbox {
+.searchbox {
     left: 0px;
     height: 50px;
     width: 5px;
@@ -102,11 +102,11 @@ body {
     transition: 2s;
 }
 
-#searchbox:focus {
+.searchbox:focus {
     outline: none;
 }
 
-#searchbox:hover {
+.searchbox:hover {
     background-color: white;
     width: 300px;
     transition: 1s;
