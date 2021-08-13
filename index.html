@@ -11,6 +11,8 @@
     <script src="script.js"></script>
     <title>Funtu!</title>
     <link rel="icon" href="New Project (1).png" type="image/icon type">
+    <script src="script.js">
+    </script>
 </head>
 
 <body>
@@ -33,7 +35,7 @@
         document.getElementById('special').style.color = 'black'
         document.getElementById('footer').style.display = 'none'
         ">New Updates</a>
-        <a href="#" id="special" onclick="document.getElementById('cards').style.display = 'none'
+        <a href="#" id="special" onclick="document.getElementById('cards').style.display = 'flex    '
         document.getElementById('home').style.backgroundColor = '#f5f5f5'
         document.getElementById('home').style.color = 'black'
         document.getElementById('special').style.backgroundColor = '#F08080'
@@ -43,38 +45,32 @@
         document.getElementById('new__updates').style.color = 'black'
         document.getElementById('footer').style.display = 'none'
         ">Special</a>
+        <div class="search">
+            <input type="text" id="searchbox" onkeyup="searchFun()" placeholder="Search...">
+        </div>
     </div>
-    <ul>
-    </ul>
-    <!-- commented <main id="cards">
-        <div class="card">
-            <img src="https://www.bing.com/th?id=OIP.yWNibBRepmC6fO7mZnicCgHaHa&w=98&h=99&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Img To change" class="imgcard">
-            <hr class="hrcard">
-        </div>
-
-        <div class="card">
-            <img src="https://www.bing.com/th?id=OIP.yWNibBRepmC6fO7mZnicCgHaHa&w=98&h=99&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Img To change" class="imgcard">
-            <hr class="hrcard">
-        </div>
-        <div class="card">
-            <img src="https://www.bing.com/th?id=OIP.yWNibBRepmC6fO7mZnicCgHaHa&w=98&h=99&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Img To change" class="imgcard">
-            <hr class="hrcard">
-        </div>
-    </main> till here -->
-
-    <!--Special Cards-->
-    <main id="cards">
-        <div class="card">
-            <h3 class="date">7/8/21</h3>
-            <img src="WhatsApp Image 2021-08-07 at 21.35.55.jpeg" alt="Mumma's Birthday" class="imgcard">
-            <hr class="hrcard">
-            <p class="p_card">Happy Birthday Mumma!! Hope you enjoy your 39th year.</p>
-        </div>
-    </main>
-    <!--Footer-->
-    <div id="footer">
-        <p id="p_footer">Made using 💗, HTML, CSS and JavaScript</p>
-    </div>
+    <span id="cardspan">
+        <main class="cards">
+            <div class="card">
+                <img src="https://www.bing.com/th?id=OIP.yWNibBRepmC6fO7mZnicCgHaHa&w=98&h=99&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Img To change" class="imgcard">
+                <hr class="hrcard">
+                <div class="name">Testing Card</div>
+                <p class="p_card">Note: If you see this card with a cat and an octopus image on it, don't worry, it's just for testing for the searchbar.</p>
+            </div>
+        </main>
+    
+        <!--Special Cards-->
+        <main class="cards">
+            <div class="card">
+                <h3 class="date"> 7/8/21
+                </h3>
+                <div class="name">Mumma's Birthday</div>
+                <img src="WhatsApp Image 2021-08-07 at 21.35.55.jpeg" alt="Mumma's Birthday" class="imgcard">
+                <hr class="hrcard">
+                <p class="p_card">Happy Birthday Mumma!! Hope you enjoy your 39th year.</p>
+            </div>
+        </main>
+    </span>
 </body>
 
 </html>
